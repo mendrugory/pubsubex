@@ -8,7 +8,7 @@ use GenEvent
   end
 
   def handle_event(message, state) do
-    IO.inspect message
+    IO.puts "I have received: '#{message}'"
     {:ok, state}
   end
 end

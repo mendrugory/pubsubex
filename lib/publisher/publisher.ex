@@ -34,6 +34,7 @@ use GenServer
 
   def notify(server, message) do
      GenServer.cast(server, {:notify, message})
+     IO.puts "I have published: '#{message}'"
   end
 
 end
